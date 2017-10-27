@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("../ttf/pt-sans-bold.ttf") format("truetype");
+}
+
+html,
+body,
+div,
+h1 {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 90px;
+    .block {
+        width: 800px;
+        margin: 100px auto 20px auto;
+        &:first-child {
+            margin-top: 20px;
+        }
+        &.ha-center {
+            text-align: center;
+        }
+        &.header {
+            width: 940px;
+            //height: 65px;
+            h1 {
+                font-family: 'PT Sans Bold', arial;
+                font-size: 42pt;
+                font-weight: normal;
+                span.rl {
+                    @p: 10px;
+                    border-bottom: 6px solid #EC4444;
+                    position: relative;
+                    top: -@p;
+                    span {
+                        position: relative;
+                        top: @p;
+                    }
+                }
+            }
+        }
+        &.social {
+            a {
+                color: white;
+                text-decoration: none;
+                vertical-align: middle;
+                &:before {
+                    content: "";
+                    background: url("../img/tw-ico.png"); // 28x23px
+                    padding: 12px 36px 12px 0;
+                    font-size: 0;
+                    vertical-align: middle;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &.form {
+            width: 425px;
+            color: white;
+            .q {
+                text-align: left;
+                font-size: 12pt;
+            }
+            .i {
+                text-align: right;
+                font-size: 10pt;
+            }
+            .q,
+            .i {
+                margin: 5px 0;
+            }
+            .input {
+                background-color: rgba(0, 0, 0, 0.4);
+                text-align: left;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                input {
+                    background-color: transparent;
+                    border: 2px solid transparent;
+                    width: 345px;
+                    color: white;
+                    font-size: 14pt;
+                    padding: 5px 2px 5px 15px;
+                    vertical-align: middle;
+                }
+                button {
+                    display: inline-block;
+                    width: 38px;
+                    height: 38px;
+                    background: url("../img/btn.png"); // 38x38px
+                    border: none;
+                    margin: 6px 8px 6px 2px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    border-radius: 19px;
+                }
+            }
+        }
+    }
+}
