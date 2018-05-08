@@ -1,0 +1,93 @@
+body {
+  font-family: "DejaVu Sans", Arial;
+  font-size: 12px; }
+
+.knotiler .tile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box; }
+  .knotiler .tile .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .knotiler .tile .con {
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative; }
+    .knotiler .tile .con .text {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0px 8px;
+      border-left: 1px dashed #444;
+      border-right: 1px dashed #444; }
+      .knotiler .tile .con .text a {
+        outline: none;
+        text-decoration: underline;
+        text-decoration-style: dotted; }
+        .knotiler .tile .con .text a:hover {
+          text-decoration: underline;
+          text-decoration-style: solid; }
+        .knotiler .tile .con .text a.link {
+          color: black;
+          text-decoration: none; }
+          .knotiler .tile .con .text a.link:hover {
+            text-decoration: underline;
+            text-decoration-style: solid; }
+  .knotiler .tile .pointer {
+    position: relative;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid #ffe;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid transparent;
+    margin-bottom: -32px;
+    top: -32px; }
+.knotiler .bgColorRand {
+  -webkit-animation: bgColorRand1-animation 60s infinite;
+  /* Safari 4+ */
+  -moz-animation: bgColorRand1-animation 60s infinite;
+  /* Fx 5+ */
+  -o-animation: bgColorRand1-animation 60s infinite;
+  /* Opera 12+ */
+  animation: bgColorRand1-animation 60s infinite;
+  /* IE 10+, Fx 29+ */ }
+.knotiler .colorRand {
+  -webkit-animation: colorRand1-animation 60s infinite;
+  /* Safari 4+ */
+  -moz-animation: colorRand1-animation 60s infinite;
+  /* Fx 5+ */
+  -o-animation: colorRand1-animation 60s infinite;
+  /* Opera 12+ */
+  animation: colorRand1-animation 60s infinite;
+  /* IE 10+, Fx 29+ */ }
+@-webkit-keyframes bgColorRand1-animation {
+  0% {
+    background: rgba(130, 130, 200, 0.5); }
+  33% {
+    background: rgba(130, 200, 130, 0.5); }
+  67% {
+    background: rgba(200, 130, 130, 0.5); }
+  100% {
+    background: rgba(130, 130, 200, 0.5); } }
+@-webkit-keyframes colorRand1-animation {
+  0% {
+    color: #6464aa; }
+  33% {
+    color: #64aa64; }
+  67% {
+    color: #aa6464; }
+  100% {
+    color: #6464aa; } }
+
+/*# sourceMappingURL=style.css.map */
