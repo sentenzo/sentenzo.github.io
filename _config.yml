@@ -1,0 +1,10 @@
+title: shiftshaper
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://shiftshaper.ru/"
+
+repository: "sentenzo/sentenzo.github.io"
+
+sass:
+    sass_dir: _sass
+    style: :compressed
